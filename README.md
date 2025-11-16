@@ -46,11 +46,10 @@ saucedemotesting/
 ├── test-output/           # Screenshots and evidence
 ├── playwright.config.js   # Playwright configuration
 ├── requirements.txt       # Python dependencies
-└── README.md             # This file
+└── README.md              # This file
 
-## Installation
+Installation guide:
 
-```bash
 # Clone the repository
 git clone <repository-url>
 cd saucedemotesting
@@ -91,3 +90,4 @@ Key technical decisions I took were as below -
 3. Following a systematic screenshot naming for evidence.
 
 4. A comprehensive error handling and validation
+

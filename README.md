@@ -1,3 +1,4 @@
+cat > README.md << 'EOF'
 # SauceDemo Test Automation Framework
 
 Professional test automation framework for saucedemo.com using Playwright with Python and Page Object Model design pattern.
@@ -35,23 +36,34 @@ This framework demonstrates advanced test automation practices including:
 ## Project Structure
 
 saucedemotesting/
-├── pages/ # Page Object classes
-│ ├── login_page.py
-│ └── inventory_page.py
-├── tests/ # Test suites
-│ ├── test_saucedemo.py # Normal browser tests
-│ └── test_saucedemo_maximized.py # Maximized browser tests
-├── utilities/ # Configuration and helpers
-│ └── config_reader.py
-├── test-output/ # Screenshots and evidence
-├── playwright.config.js # Playwright configuration
-├── requirements.txt # Python dependencies
-└── README.md # This file
 
+├── pages/ # Page Object classes
+
+│ ├── login_page.py
+
+│ └── inventory_page.py
+
+├── tests/ # Test suites
+
+│ ├── test_saucedemo.py # Normal browser tests
+
+│ └── test_saucedemo_maximized.py # Maximized browser tests
+
+├── utilities/ # Configuration and helpers
+
+│ └── config_reader.py
+
+├── test-output/ # Screenshots and evidence
+
+├── playwright.config.js # Playwright configuration
+
+├── requirements.txt # Python dependencies
+
+└── README.md # This file
 
 ## Installation
 
-```bash
+\`\`\`bash
 # Clone the repository
 git clone https://github.com/dheerajbahlqaengineer/saucedemo-tests.git
 cd saucedemotesting
@@ -65,9 +77,11 @@ pip install -r requirements.txt
 
 # Install Playwright browsers
 playwright install
+\`\`\`
 
-##Running Tests
+## Running Tests
 
+\`\`\`bash
 # Run all tests in normal browser
 pytest tests/test_saucedemo.py --headed -v
 
@@ -76,22 +90,23 @@ pytest tests/test_saucedemo_maximized.py --headed -v
 
 # Run specific test
 pytest tests/test_saucedemo.py::TestSauceDemo::test_successful_login_and_product_display --headed -v -s
+\`\`\`
 
-## LLM Usage Documentation:
 I used Chat-gpt 3.5 as my LLM for assistance on the following:
 
-1. Verification of the project structure setup.
+Verification of the project structure setup.
 
-2. Code syntax verification.
+Code syntax verification.
 
-3. For verification of the cart icon bug I found on the different window size of the browser.
+For verification of the cart icon bug I found on the different window size of the browser.
 
 Key technical decisions I took were as below -
 
-1. I used the Page Object Model (POM) structure for maintainability.
+I used the Page Object Model (POM) structure for maintainability.
 
-2. Separated the test files for different browser configurations.
+Separated the test files for different browser configurations.
 
-3. Following a systematic screenshot naming convention for evidence.
+Following a systematic screenshot naming for evidence.
 
-4. A comprehensive error handling and validation.
+A comprehensive error handling and validation
+EOF

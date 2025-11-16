@@ -1,4 +1,3 @@
-
 # SauceDemo Test Automation Framework
 
 Professional test automation framework for saucedemo.com using Playwright with Python and Page Object Model design pattern.
@@ -35,6 +34,7 @@ This framework demonstrates advanced test automation practices including:
 
 ## Project Structure
 
+
 saucedemotesting/
 
 ├── pages/                            # Page Object classes
@@ -61,8 +61,10 @@ saucedemotesting/
 
 └── README.md                         # This file
 
+
 ## Installation
 
+```bash
 # Clone the repository
 git clone https://github.com/dheerajbahlqaengineer/saucedemo-tests.git
 cd saucedemotesting
@@ -77,8 +79,7 @@ pip install -r requirements.txt
 # Install Playwright browsers
 playwright install
 
-## Running Tests
-
+Running Tests
 # Run all tests in normal browser
 pytest tests/test_saucedemo.py --headed -v
 
@@ -87,19 +88,16 @@ pytest tests/test_saucedemo_maximized.py --headed -v
 
 # Run specific test
 pytest tests/test_saucedemo.py::TestSauceDemo::test_successful_login_and_product_display --headed -v -s
+```
 
+LLM Usage Documentation
+1. I used Chat-gpt 3.5 as my LLM for assistance on the following:
+2. Verification of the project structure setup.
+3. Code syntax verification.
+4. For verification of the cart icon bug I found on the different window size of the browser.
 
-## LLM Usage Documentation
-
-# I used Chat-gpt 3.5 as my LLM for assistance on the following:
-
-1. Verification of the project structure setup.
-2. Code syntax verification.
-3. For verification of the cart icon bug I found on the different window size of the browser.
-
-# Key technical decisions I took were as below -
-
+Key Technical Decisions
 1. I used the Page Object Model (POM) structure for maintainability.
 2. Separated the test files for different browser configurations.
 3. Following a systematic screenshot naming for evidence.
-4. A comprehensive error handling and validation
+4. A comprehensive error handling and validation.

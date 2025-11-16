@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.playwright/
+
+# Test reports and outputs
+test-output/
+report.html
+*.xml
+*.json
+*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node modules (for Playwright)
+node_modules/

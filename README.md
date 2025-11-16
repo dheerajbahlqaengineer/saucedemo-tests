@@ -33,6 +33,7 @@ This framework demonstrates advanced test automation practices including:
 - CI/CD: GitHub Actions ready
 
 ## Project Structure
+
 saucedemotesting/
 ├── pages/ # Page Object classes
 │ ├── login_page.py
